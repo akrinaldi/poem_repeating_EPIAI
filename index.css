@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 75px;
+    background-color: black;
+    background-image: url(file.svg);
+    background-size: cover;
+}
+
+p {
+    color:black;
+    font-size: 150px;
+    position: relative;
+    left: 50px;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+.wrapper {
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+    animation-name: fadeIn;
+    animation-duration: 25s;
+}
+
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+      right: -200px;
+    }
+  }
+
+.itemLeft,
+.itemRight {
+    color: black;
+    width: 200px;
+    height: 100px;
+    border-radius: 6px;
+    position: absolute;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.itemLeft {
+    left: max(calc(200px * 7), 100%);
+    animation-name: scrollLeft;
+  }
+
+.itemRight {
+    right: max(calc(200px * 7), calc(100% + 200px));
+    animation-name: scrollRight;
+  }
+
+.item1 {
+    color: rgb(108, 4, 25);
+    animation-delay: calc(30s / 7 * (7 - 1) * -1);
+}
+.item2 {
+    animation-delay: calc(30s / 7 * (7 - 2) * -1);
+}
+.item3 {
+    animation-delay: calc(30s / 7 * (7 - 3) * -1);
+}
+.item4 {
+    animation-delay: calc(30s / 7 * (7 - 4) * -1);
+}
+.item5 {
+    animation-delay: calc(30s / 7 * (7 - 5) * -1);
+}
+.item6 {
+    animation-delay: calc(30s / 7 * (7 - 6) * -1);
+}
+.item7 {
+    animation-delay: calc(30s / 7 * (7 - 7) * -1);
+}
