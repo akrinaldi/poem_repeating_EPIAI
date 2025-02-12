@@ -7,6 +7,16 @@
 <body>
     <div class="am">
         <p>I am </p>
+        <input id = "useradd">
+        <button onclick = "addWord()">Add to the poem</button>
+        <script>
+            function addWord() {
+                let userword = document.querySelector("#useradd");
+                let adding = document.querySelector("#adding");
+
+                adding.innerHTML = userword.value;
+            }
+        </script>
     </div>
     <div class="wrapper">
         <div class="itemLeft item1">FIRE!</div>
@@ -19,7 +29,7 @@
     </div>
 
 <div class="wrapper">
-    <div class="itemRight item1">FIRE!</div>
+    <div class="itemRight item1" id="adding">FIRE!</div>
     <div class="itemRight item2">fluid</div>
     <div class="itemRight item3">worthy</div>
     <div class="itemRight item4">multifaceted</div>
