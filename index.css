@@ -9,18 +9,13 @@ body {
     background-color: black;
     background-image: url(file.svg);
     background-size: cover;
-}
-
-.container {
-    height:100vh;
-    width:100vw;
-    position:relative; 
     overflow:hidden;
 }
 
 .am .p {
     color:black;
     font-size: 150px;
+    justify:center;
 }
 
 @keyframes fadeIn {
