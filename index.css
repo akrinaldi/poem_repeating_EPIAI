@@ -28,8 +28,8 @@ body {
 .am {
     position: absolute;
     justify: center;
-    height: 200px;
-    width:200px;
+    height: 300px;
+    width:300px;
     background-color: white;
     left: calc(50vw - 100px);
     top:calc(50vh - 100px);
