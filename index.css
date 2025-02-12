@@ -11,6 +11,13 @@ body {
     background-size: cover;
 }
 
+.container {
+    height:100vh;
+    width:100vw;
+    position:relative; 
+    overflow:hidden;
+}
+
 .am .p {
     color:black;
     font-size: 150px;
