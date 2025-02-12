@@ -9,6 +9,7 @@ body {
     background-color: black;
     background-image: url(file.svg);
     background-size: cover;
+    overflow: auto;
 }
 
 .am .p {
@@ -30,9 +31,9 @@ body {
     justify: center;
     height: 300px;
     width:300px;
-    background-color: white;
     left: calc(50vw - 100px);
     top:calc(50vh - 100px);
+    justify-content: center;
     
 }
 
