@@ -11,11 +11,9 @@ body {
     background-size: cover;
 }
 
-p {
+.am .p {
     color:black;
     font-size: 150px;
-    position: relative;
-    left: 50px;
 }
 
 @keyframes fadeIn {
