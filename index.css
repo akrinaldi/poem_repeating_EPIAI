@@ -3,19 +3,45 @@
 }
 
 
+@font-face {
+	font-family: 'noto';
+	src: local('noto'), url('./webfonts/noto-serif-display-latin-500-normal.woff') format('woff');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_62169">Text with this font applied</p> */
+.fontsforweb_fontid_62169 {
+	font-family: 'noto' !important;
+}
+
+
 body {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'noto', serif;
     font-size: 75px;
     background-color: black;
     background-image: url(file.svg);
     background-size: cover;
-    overflow:hidden;
+}
+
+
+.button {
+    padding: 14px 40px;
+    border-radius: 12px;
+    font-size: 24px;
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'noto';
+}
+
+.container {
+    overflow: hidden;
 }
 
 .am p {
-    color:black;
-    font-size: 150px;
-    justify:center;
+    color:antiquewhite;
+    font-size: 200px;
+    justify-content:center;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
 }
 
 @keyframes fadeIn {
@@ -29,14 +55,18 @@ body {
 
 .am {
     position: absolute;
-    justify: center;
-    height: 300px;
-    width:300px;
-    left: calc(50vw - 100px);
-    top:calc(50vh - 100px);
+    background-color: black;
+    border-width: 15px;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 50px;
+    height: 450px;
+    width:500px;
+    left: calc(50vw - 200px);
+    top:calc(50vh - 200px);
     justify-content: center;
-    overflow:hidden;
-    
+    z-index: 2;
+    text-align: center;
 }
 
 .wrapper {
@@ -44,7 +74,6 @@ body {
     position: relative;
     height: 100px;
     margin-top: 5rem;
-    overflow: hidden;
     mask-image: linear-gradient(
         to right,
         rgba(0,0,0,0),
@@ -54,6 +83,7 @@ body {
     );
     animation-name: fadeIn;
     animation-duration: 25s;
+    z-index: 1;
 }
 
 
