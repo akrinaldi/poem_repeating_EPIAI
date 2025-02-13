@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+
+@font-face {
+	font-family: 'noto';
+	src: local('noto'), url('./webfonts/noto-serif-display-latin-500-normal.woff') format('woff');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_62169">Text with this font applied</p> */
+.fontsforweb_fontid_62169 {
+	font-family: 'noto' !important;
+}
+
+
+body {
+    font-family: 'noto', serif;
+    font-size: 75px;
+    background-color: black;
+    background-image: url(file.svg);
+    background-size: cover;
+}
+
+
+.button {
+    padding: 14px 40px;
+    border-radius: 12px;
+    font-size: 24px;
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'noto';
+}
+
+.container {
+    overflow: hidden;
+}
+
+.am p {
+    color:antiquewhite;
+    font-size: 200px;
+    justify-content:center;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.am {
+    position: absolute;
+    background-color: black;
+    border-width: 15px;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 50px;
+    height: 450px;
+    width:500px;
+    left: calc(50vw - 200px);
+    top:calc(50vh - 200px);
+    justify-content: center;
+    z-index: 2;
+    text-align: center;
+}
+
+.wrapper {
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+    animation-name: fadeIn;
+    animation-duration: 25s;
+    z-index: 1;
+}
+
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+      right: -200px;
+    }
+  }
+
+.itemLeft,
+.itemRight {
+    color: black;
+    width: 200px;
+    height: 100px;
+    border-radius: 6px;
+    position: absolute;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.itemLeft {
+    left: max(calc(200px * 7), 100%);
+    animation-name: scrollLeft;
+  }
+
+.itemRight {
+    right: max(calc(200px * 7), calc(100% + 200px));
+    animation-name: scrollRight;
+  }
+
+.item1 {
+    color: rgb(108, 4, 25);
+    animation-delay: calc(30s / 7 * (7 - 1) * -1);
+}
+.item2 {
+    animation-delay: calc(30s / 7 * (7 - 2) * -1);
+}
+.item3 {
+    animation-delay: calc(30s / 7 * (7 - 3) * -1);
+}
+.item4 {
+    animation-delay: calc(30s / 7 * (7 - 4) * -1);
+}
+.item5 {
+    animation-delay: calc(30s / 7 * (7 - 5) * -1);
+}
+.item6 {
+    animation-delay: calc(30s / 7 * (7 - 6) * -1);
+}
+.item7 {
+    animation-delay: calc(30s / 7 * (7 - 7) * -1);
+}
